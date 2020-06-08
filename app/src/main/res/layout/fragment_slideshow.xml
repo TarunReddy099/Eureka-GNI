@@ -45,14 +45,14 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:orientation="horizontal">
+
                         <com.google.android.material.button.MaterialButton
+                            android:id="@+id/r1"
+                            style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/mathsb"
                             android:layout_marginEnd="8dp"
-                            android:text="@string/register"
-                            style="?attr/borderlessButtonStyle"
-                            />
+                            android:text="@string/register" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -98,7 +98,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:text="@string/register"
-                            android:id="@+id/physicalsb"
+                            android:id="@+id/r2"
                             style="?attr/borderlessButtonStyle"
                             />
                     </LinearLayout>
@@ -145,7 +145,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
-                            android:id="@+id/engb"
+                            android:id="@+id/r3"
                             android:text="@string/register"
                             style="?attr/borderlessButtonStyle"
                             />
@@ -193,7 +193,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
-                            android:id="@+id/socialb"
+                            android:id="@+id/r4"
                             android:text="@string/register"
                             style="?attr/borderlessButtonStyle"
                             />
@@ -243,7 +243,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
-                            android:id="@+id/biob"
+                            android:id="@+id/r5"
                             android:text="@string/register"
                             style="?attr/borderlessButtonStyle"
                             />

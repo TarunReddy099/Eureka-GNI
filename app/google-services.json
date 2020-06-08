@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1050308651526",
+    "firebase_url": "https://eureka-gni.firebaseio.com",
+    "project_id": "eureka-gni",
+    "storage_bucket": "eureka-gni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050308651526:android:e8141496c043578e9bb187",
+        "android_client_info": {
+          "package_name": "com.example.eureka_gni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050308651526-gdhvcboofu2j9sh5sqetk6gn5hjkdk2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr_aqe_8-Q78QWdRoIN1lAIMClmLKBsRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050308651526-gdhvcboofu2j9sh5sqetk6gn5hjkdk2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
