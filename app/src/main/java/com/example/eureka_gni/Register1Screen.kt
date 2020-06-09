@@ -22,13 +22,13 @@ class Register1Screen : AppCompatActivity() {
             if (task.isSuccessful) {
                 val document = task.result
                 if (document != null) {
-                    val english: String? = document.getString("e1info")
+                    val register: String? = document.getString("e1info")
 
                     val myWebView: WebView = findViewById(R.id.webviewb)
                     val webSettings: WebSettings = myWebView.getSettings()
                     webSettings.javaScriptEnabled = true
                     myWebView.setWebViewClient(WebViewClient())
-                    myWebView.loadUrl(english)
+                    myWebView.loadUrl(register)
 
                 } else {
                     Log.d("LOGGER", "No such document")
