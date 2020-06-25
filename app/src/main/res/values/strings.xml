@@ -11,8 +11,20 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Live Events</string>
     <string name="register">Register</string>
+    <string name="club4">MISSION: The Mission of this club is to preserve, promote and disseminate all forms of art and culture.
 
+\nVISION: The vision of the Cultural club-YOUtsav is to provide a supportive environment for the interested students to share their creativity, knowledge and passion for while attending Guru Nanak Institutions. It is our vision that we will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in all the events.</string>
+    <string name="club2">VISION: This club was created with the sole purpose of honing technical skills of our club members and other students and also introduce new technologies to students. This club also helps the students in completing their individual project with the help of senior developers (mentors).
+
+\nMISSION: The major objective of this technical club is to create a work environment where the students can share and develop their technical perceptions.
+
+Facilitate foster networking with alumni, industries, institutions and other stake-holders.</string>
+    <string name="club3">MISSION: Street cause GNI is a student run organizationwhich intend to do something for the betterment of society.We take up projects that creates impact and fulfil the necessity of people who are in need. We hold regular meeting, discussions and organize projects based on various social issues.
+
+\nVISION: The vision of Street Cause GNI is to provide a platform to the students of Gurunanak Institution who are enthusiastic and concern about the change in society. Here the students are exploredto various issues in society and work on it , this way they improve their coping skills. Working in a group they learn team work , communication skills and time management. It is our vision that Street Cause GNI will be able to get more awareness and support from students of all departments by sharing the details of projects that are held for a good cause.</string>
     <string name="home_second">Home Second</string>
+    <string name="club1">MISSION: The club will hold regular meetings and discussions and organize monthly events based on photography and non-photography, lectures and workshops by various artists.
+        \nVISION: The vision of the Photography Club-‘CLICKS’ @ GNI is to provide a supportive environment for the interested photography students to share their creativity, knowledge and passion for photography while attending Guru Nanak Institutions. It is our vision that photography club will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in photographic events as well as in extracurricular activities/events.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

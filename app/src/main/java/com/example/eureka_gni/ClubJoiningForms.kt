@@ -1,30 +1,39 @@
 package com.example.eureka_gni
 
+import android.app.PendingIntent.getActivity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Toast
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.fragment_home.*
 
-class Register4Screen : AppCompatActivity() {
+class ClubJoiningForms : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register4_screen)
+        setContentView(R.layout.activity_club_joining_forms)
         var myDB = FirebaseFirestore.getInstance()
 
 
         val docRef: DocumentReference =
-            myDB.collection("Events").document("e4")
+            myDB.collection("clubjoinings").document("links")
         docRef.get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val document = task.result
                 if (document != null) {
-                    val register: String? = document.getString("e4info")
 
-                    val myWebView: WebView = findViewById(R.id.webview4)
+                    var iii: Intent
+                    iii= getIntent()
+                    var info : String = iii.getStringExtra("clubtype")
+                    val register: String? = document.getString(info)
+
+                    val myWebView: WebView = findViewById(R.id.webviewclubs)
                     val webSettings: WebSettings = myWebView.getSettings()
                     webSettings.javaScriptEnabled = true
                     myWebView.setWebViewClient(WebViewClient())

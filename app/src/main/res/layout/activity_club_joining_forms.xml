@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register2Screen">
+    tools:context=".ClubJoiningForms">
     <WebView
-        android:id="@+id/webview2"
+        android:id="@+id/webviewclubs"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,26 +31,31 @@ class SlideshowFragment : Fragment() {
         val b5=view!!.findViewById<Button>(R.id.r5)
         b1?.setOnClickListener {
             val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
+            iii.putExtra("event","e1")
             requireActivity().startActivity(iii)
 
         }
         b2?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext,Register2Screen::class.java)
+            val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
+            iii.putExtra("event","e2")
             requireActivity().startActivity(iii)
 
         }
         b3?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext,Register3Screen::class.java)
+            val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
+            iii.putExtra("event","e3")
             requireActivity().startActivity(iii)
 
         }
         b4?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext,Register4Screen::class.java)
+            val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
+            iii.putExtra("event","e4")
             requireActivity().startActivity(iii)
 
         }
         b5?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext,Register5Screen::class.java)
+            val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
+            iii.putExtra("event","e5")
             requireActivity().startActivity(iii)
 
         }
