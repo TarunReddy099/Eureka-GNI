@@ -11,12 +11,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="140dp"
+        android:layout_width="160dp"
         android:layout_height="140dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/school"
+        android:background="@drawable/gnilogo"
         android:elevation="10dp"
         android:contentDescription="@string/applogo" />
 
@@ -72,7 +72,7 @@
         app:boxStrokeColor="#81d4fa"
         app:endIconMode="password_toggle"
         app:boxStrokeWidth="2sp"
-        android:hint="@string/password">
+        android:hint="@string/enter_password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password1"
@@ -91,13 +91,14 @@
         android:id="@+id/login1"
         android:layout_width="180dp"
         android:layout_gravity="center"
-        android:layout_height="45dp"
+        android:layout_height="60dp"
+
         android:elevation="30dp"
-        android:background="@drawable/rounded_button"
+
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/login"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 

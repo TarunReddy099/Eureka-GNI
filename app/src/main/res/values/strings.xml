@@ -31,4 +31,9 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="events">string</string>
     <string name="visit_gni">visitGni</string>
     <string name="contact_developer">contactDeveloper</string>
+    <string name="applogo">logo</string>
+    <string name="email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">LOGIN</string>
+    <string name="submit">SUBMIT</string>
 </resources>
