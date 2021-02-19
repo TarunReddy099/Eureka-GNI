@@ -32,4 +32,5 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="password">Password</string>
     <string name="applogo">Logo</string>
     <string name="email">Email</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -15,6 +15,7 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.eureka_gni.R
+import com.example.eureka_gni.ResultsHomeActivity
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -52,7 +53,7 @@ class HomeFragment : Fragment() {
         }
 
         results.setOnClickListener {
-            //startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))
+            startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))
         }
         exams.setOnClickListener {
             val cm = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
