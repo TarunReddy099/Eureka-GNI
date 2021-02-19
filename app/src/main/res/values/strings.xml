@@ -28,9 +28,7 @@ Facilitate foster networking with alumni, industries, institutions and other sta
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="login">Login</string>
-    <string name="password">Password</string>
-    <string name="applogo">Logo</string>
-    <string name="email">Email</string>
-    <string name="submit">Submit</string>
+    <string name="events">string</string>
+    <string name="visit_gni">visitGni</string>
+    <string name="contact_developer">contactDeveloper</string>
 </resources>

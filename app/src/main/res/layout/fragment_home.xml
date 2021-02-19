@@ -14,7 +14,7 @@
         android:padding="5dp"
         android:id="@+id/schname"
         android:text="EUREKA GNI"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         android:gravity="center_horizontal"
@@ -43,7 +43,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cincout"
+            android:id="@+id/events"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -62,7 +62,7 @@
 
                 <ImageView
                     android:id="@+id/icon"
-                    android:src="@drawable/baseline_done_white_48dp"
+                    android:src="@drawable/event_outline_event_white_24"
                     android:layout_height="50dp"
                     android:layout_width="50dp"
                     android:layout_margin="10dp"
@@ -74,7 +74,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="checkin_out"
+                    android:text="@string/events"
                     android:textSize="15sp"
                     android:textAlignment="center"
                     android:layout_gravity="center"
@@ -83,7 +83,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/exam"
+            android:id="@+id/clubs"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -102,7 +102,7 @@
 
                 <ImageView
                     android:id="@+id/icon2"
-                    android:src="@drawable/examicon"
+                    android:src="@drawable/round_groups_white_24dp"
                     android:layout_height="50dp"
                     android:layout_width="50dp"
                     android:layout_margin="10dp"
@@ -113,11 +113,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="exam"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
                     android:layout_gravity="center"
-                    android:textColor="#000" />
+                    android:text="GNI CLUBS"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -163,7 +163,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/contactus"
+            android:id="@+id/visitGni"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -182,7 +182,7 @@
 
                 <ImageView
                     android:id="@+id/icon4"
-                    android:src="@drawable/baseline_person_white_48dp"
+                    android:src="@drawable/link_icon"
                     android:layout_height="50dp"
                     android:layout_width="50dp"
                     android:layout_margin="10dp"
@@ -193,7 +193,7 @@
                 <TextView
                     android:layout_width="102dp"
                     android:layout_height="wrap_content"
-                    android:text="contact_us"
+                    android:text="@string/visit_gni"
                     android:textSize="15sp"
                     android:textAlignment="center"
                     android:layout_gravity="center"
@@ -204,6 +204,7 @@
 
 
     <LinearLayout
+        android:layout_marginTop="30dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -212,14 +213,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="contact_developer"
+            android:text="@string/contact_developer"
             android:gravity="center_horizontal"
             android:layout_gravity="bottom" />
         <TextView
             android:id="@+id/devmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="developer_email"
+            android:text="developerTeam@gmail.com"
             android:gravity="center_horizontal"
             android:textColor="@color/colorAccent"
             android:layout_marginBottom="10dp"

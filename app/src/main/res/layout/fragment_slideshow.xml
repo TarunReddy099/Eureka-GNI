@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-    <ScrollView android:layout_marginTop="30dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView">
+        android:layout_marginTop="30dp">
 
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp">
+                android:layout_margin="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -28,36 +30,22 @@
                     <!-- Media -->
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
-                        android:src="@drawable/tedx"
+                        android:layout_height="200dp"
+                        android:contentDescription="TODO"
                         android:scaleType="centerCrop"
-                        android:contentDescription="TODO" />
+                        android:src="@drawable/tedx" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/r1"
 
-                    <!-- Buttons -->
-                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/r1"
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:text="@string/register" />
-                    </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:text="@string/register" />
 
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card2"
                 android:layout_width="match_parent"
@@ -69,45 +57,26 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
-                        android:src="@drawable/tedx"
+                        android:layout_height="200dp"
                         android:scaleType="centerCrop"
-                        />
+                        android:src="@drawable/event_ignite" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp">
 
-                        <!-- Title, secondary and supporting text -->
-
-                    </LinearLayout>
-
-                    <!-- Buttons -->
-                    <LinearLayout
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/r2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:text="@string/register"
-                            android:id="@+id/r2"
-                            style="?attr/borderlessButtonStyle"
-                            />
-                    </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/register" />
 
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp">
@@ -117,46 +86,27 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
+                        android:layout_height="200dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/tedx"/>
+                        android:src="@drawable/event_chakdey" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/r3"
 
-                        <!-- Title, secondary and supporting text -->
-
-
-                    </LinearLayout>
-
-                    <!-- Buttons -->
-                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:id="@+id/r3"
-                            android:text="@string/register"
-                            style="?attr/borderlessButtonStyle"
-                            />
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/register" />
 
-                    </LinearLayout>
 
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp">
@@ -174,35 +124,17 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/tedx" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp">
 
-
-                    </LinearLayout>
-
-                    <!-- Buttons -->
-                    <LinearLayout
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/r4"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:id="@+id/r4"
-                            android:text="@string/register"
-                            style="?attr/borderlessButtonStyle"
-                            />
-
-                    </LinearLayout>
+                        android:layout_height="match_parent"
+                        android:text="@string/register" />
 
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card"
                 android:layout_width="match_parent"
@@ -214,42 +146,18 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="194dp"
-                        android:src="@drawable/tedx"
                         android:scaleType="centerCrop"
+                        android:src="@drawable/tedx" />
 
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-
-
-                    </LinearLayout>
-
-                    <!-- Buttons -->
-                    <LinearLayout
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/r5"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:id="@+id/r5"
-                            android:text="@string/register"
-                            style="?attr/borderlessButtonStyle"
-                            />
-
-                    </LinearLayout>
-
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/register" />
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>

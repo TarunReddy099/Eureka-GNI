@@ -16,8 +16,9 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.eureka_gni.R
 import com.example.eureka_gni.ResultsHomeActivity
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.FirebaseFirestore
+import com.example.eureka_gni.ui.gallery.GalleryFragment
+import com.example.eureka_gni.ui.slideshow.SlideshowFragment
+
 
 class HomeFragment : Fragment() {
 
@@ -34,58 +35,36 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        val checkinout=view.findViewById<CardView>(R.id.cincout)
+        val events=view.findViewById<CardView>(R.id.events)
         val dev_mail=view.findViewById<TextView>(R.id.devmail)
-        val contact=view.findViewById<CardView>(R.id.contactus)
+        val clubs=view.findViewById<CardView>(R.id.clubs)
         val results =view.findViewById<CardView>(R.id.results)
-        val exams=view.findViewById<CardView>(R.id.exam)
+        val visitGni=view.findViewById<CardView>(R.id.visitGni)
         val
                 viewPager = view.findViewById<View>(R.id.view_pager) as ViewPager
         adapter = CustomSwipeAdapter(this.activity)
         viewPager!!.adapter = adapter
 
 
-        checkinout.setOnClickListener {
-           // startActivity(Intent(requireActivity().baseContext, CheckInOutActivity::class.java))
+        events?.setOnClickListener {
+           //startActivity(Intent(requireActivity().baseContext, SlideshowFragment::class.java))
         }
-        contact.setOnClickListener {
-            //startActivity(Intent(requireActivity().baseContext, ContactUsActivity::class.java))
+        clubs.setOnClickListener {
+            //startActivity(Intent(requireActivity().baseContext, GalleryFragment::class.java))
         }
 
         results.setOnClickListener {
             startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))
         }
-        exams.setOnClickListener {
-            val cm = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        visitGni.setOnClickListener {
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                val n = cm.activeNetwork
-                if (n != null) {
-                    val nc = cm.getNetworkCapabilities(n)
-                    //It will check for both wifi and cellular network
-                    Toast.makeText(
-                        requireActivity().baseContext,
-                        " there",
-                        Toast.LENGTH_LONG
-                    ).show()
-
-                }
-                else {
-                    Toast.makeText(
-                        requireActivity().baseContext,
-                        "nope",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-
-            }
         }
 
 
 
         dev_mail?.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
-            val recipients = arrayOf("ringpisolve@gmail.com")
+            val recipients = arrayOf("eurekaGni@gmail.com")
             intent.putExtra(Intent.EXTRA_EMAIL, recipients)
             intent.putExtra(Intent.EXTRA_SUBJECT, "Subject text here...")
             intent.putExtra(Intent.EXTRA_TEXT, "Body of the content here...")
