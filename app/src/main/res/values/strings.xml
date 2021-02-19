@@ -36,4 +36,6 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="enter_password">Enter Password</string>
     <string name="login">LOGIN</string>
     <string name="submit">SUBMIT</string>
+    <string name="gni_clubs">GNI CLUBS</string>
+    <string name="results">RESULTS</string>
 </resources>

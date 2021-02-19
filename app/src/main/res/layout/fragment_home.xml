@@ -74,8 +74,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/events"
+                    android:text="EVENTS"
                     android:textSize="15sp"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:layout_gravity="center"
                     android:textColor="#000" />
@@ -114,7 +115,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="GNI CLUBS"
+                    android:text="@string/gni_clubs"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="15sp" />
@@ -153,7 +155,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="results"
+                    android:text="@string/results"
+                    android:textStyle="bold"
                     android:textSize="15sp"
                     android:textAlignment="center"
                     android:layout_gravity="center"
@@ -193,7 +196,8 @@
                 <TextView
                     android:layout_width="102dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/visit_gni"
+                    android:text="@string/visit1_gni"
+                    android:textStyle="bold"
                     android:textSize="15sp"
                     android:textAlignment="center"
                     android:layout_gravity="center"
@@ -220,6 +224,7 @@
             android:id="@+id/devmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textStyle="italic"
             android:text="developerTeam@gmail.com"
             android:gravity="center_horizontal"
             android:textColor="@color/colorAccent"

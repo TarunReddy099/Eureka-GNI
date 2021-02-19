@@ -1,0 +1,653 @@
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\n\r\nbuildscript {\r\n    ext.kotlin_version = '1.3.70'\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        \r\n    }\r\n    dependencies {\r\n        classpath 'com.android.tools.build:gradle:4.0.0'\r\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\r\n        classpath 'com.google.gms:google-services:4.3.3'\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        \r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 56757b4ad22b2e1848139a368cff3f918318ac02)
++++ build.gradle	(date 1613578647478)
+@@ -8,7 +8,7 @@
+         
+     }
+     dependencies {
+-        classpath 'com.android.tools.build:gradle:4.0.0'
++        classpath 'com.android.tools.build:gradle:4.1.1'
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+         classpath 'com.google.gms:google-services:4.3.3'
+ 
+Index: app/src/main/res/layout/fragment_slideshow.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:orientation=\"vertical\" android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    >\r\n    <ScrollView android:layout_marginTop=\"30dp\"\r\n        android:layout_width=\"fill_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:id=\"@+id/scrollView\">\r\n\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"fill_parent\"\r\n            android:layout_height=\"fill_parent\"\r\n            android:orientation=\"vertical\" >\r\n\r\n            <com.google.android.material.card.MaterialCardView\r\n                android:id=\"@+id/card1\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_margin=\"8dp\">\r\n\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:orientation=\"vertical\">\r\n\r\n                    <!-- Media -->\r\n                    <ImageView\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"194dp\"\r\n                        android:src=\"@drawable/tedx\"\r\n                        android:scaleType=\"centerCrop\"\r\n                        android:contentDescription=\"TODO\" />\r\n\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:orientation=\"vertical\"\r\n                        android:padding=\"16dp\"/>\r\n\r\n                    <!-- Buttons -->\r\n                    <LinearLayout\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:layout_margin=\"8dp\"\r\n                        android:orientation=\"horizontal\">\r\n\r\n                        <com.google.android.material.button.MaterialButton\r\n                            android:id=\"@+id/r1\"\r\n                            style=\"?attr/borderlessButtonStyle\"\r\n                            android:layout_width=\"wrap_content\"\r\n                            android:layout_height=\"wrap_content\"\r\n                            android:layout_marginEnd=\"8dp\"\r\n                            android:text=\"@string/register\" />\r\n                    </LinearLayout>\r\n\r\n                </LinearLayout>\r\n\r\n            </com.google.android.material.card.MaterialCardView>\r\n            <com.google.android.material.card.MaterialCardView\r\n                android:id=\"@+id/card2\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_margin=\"8dp\">\r\n\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:orientation=\"vertical\">\r\n\r\n                    <!-- Media -->\r\n                    <ImageView\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"194dp\"\r\n                        android:src=\"@drawable/tedx\"\r\n                        android:scaleType=\"centerCrop\"\r\n                        />\r\n\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:orientation=\"vertical\"\r\n                        android:padding=\"16dp\">\r\n\r\n                        <!-- Title, secondary and supporting text -->\r\n\r\n                    </LinearLayout>\r\n\r\n                    <!-- Buttons -->\r\n                    <LinearLayout\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:layout_margin=\"8dp\"\r\n                        android:orientation=\"horizontal\">\r\n                        <com.google.android.material.button.MaterialButton\r\n                            android:layout_width=\"wrap_content\"\r\n                            android:layout_height=\"wrap_content\"\r\n                            android:layout_marginEnd=\"8dp\"\r\n                            android:text=\"@string/register\"\r\n                            android:id=\"@+id/r2\"\r\n                            style=\"?attr/borderlessButtonStyle\"\r\n                            />\r\n                    </LinearLayout>\r\n\r\n                </LinearLayout>\r\n\r\n            </com.google.android.material.card.MaterialCardView>\r\n            <com.google.android.material.card.MaterialCardView\r\n                android:id=\"@+id/card\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_margin=\"8dp\">\r\n\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:orientation=\"vertical\">\r\n\r\n                    <!-- Media -->\r\n                    <ImageView\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"194dp\"\r\n                        android:scaleType=\"centerCrop\"\r\n                        android:src=\"@drawable/tedx\"/>\r\n\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:orientation=\"vertical\"\r\n                        android:padding=\"16dp\">\r\n\r\n                        <!-- Title, secondary and supporting text -->\r\n\r\n\r\n                    </LinearLayout>\r\n\r\n                    <!-- Buttons -->\r\n                    <LinearLayout\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:layout_margin=\"8dp\"\r\n                        android:orientation=\"horizontal\">\r\n                        <com.google.android.material.button.MaterialButton\r\n                            android:layout_width=\"wrap_content\"\r\n                            android:layout_height=\"wrap_content\"\r\n                            android:layout_marginEnd=\"8dp\"\r\n                            android:id=\"@+id/r3\"\r\n                            android:text=\"@string/register\"\r\n                            style=\"?attr/borderlessButtonStyle\"\r\n                            />\r\n\r\n                    </LinearLayout>\r\n\r\n                </LinearLayout>\r\n\r\n            </com.google.android.material.card.MaterialCardView>\r\n            <com.google.android.material.card.MaterialCardView\r\n                android:id=\"@+id/card\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_margin=\"8dp\">\r\n\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:orientation=\"vertical\">\r\n\r\n                    <!-- Media -->\r\n\r\n                    <ImageView\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"194dp\"\r\n                        android:scaleType=\"centerCrop\"\r\n                        android:src=\"@drawable/tedx\" />\r\n\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:orientation=\"vertical\"\r\n                        android:padding=\"16dp\">\r\n\r\n\r\n                    </LinearLayout>\r\n\r\n                    <!-- Buttons -->\r\n                    <LinearLayout\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:layout_margin=\"8dp\"\r\n                        android:orientation=\"horizontal\">\r\n                        <com.google.android.material.button.MaterialButton\r\n                            android:layout_width=\"wrap_content\"\r\n                            android:layout_height=\"wrap_content\"\r\n                            android:layout_marginEnd=\"8dp\"\r\n                            android:id=\"@+id/r4\"\r\n                            android:text=\"@string/register\"\r\n                            style=\"?attr/borderlessButtonStyle\"\r\n                            />\r\n\r\n                    </LinearLayout>\r\n\r\n                </LinearLayout>\r\n\r\n            </com.google.android.material.card.MaterialCardView>\r\n            <com.google.android.material.card.MaterialCardView\r\n                android:id=\"@+id/card\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_margin=\"8dp\">\r\n\r\n                <LinearLayout\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:orientation=\"vertical\">\r\n\r\n                    <!-- Media -->\r\n                    <ImageView\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"194dp\"\r\n                        android:src=\"@drawable/tedx\"\r\n                        android:scaleType=\"centerCrop\"\r\n\r\n                        />\r\n\r\n                    <LinearLayout\r\n                        android:layout_width=\"match_parent\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:orientation=\"vertical\"\r\n                        android:padding=\"16dp\">\r\n\r\n\r\n\r\n                    </LinearLayout>\r\n\r\n                    <!-- Buttons -->\r\n                    <LinearLayout\r\n                        android:layout_width=\"wrap_content\"\r\n                        android:layout_height=\"wrap_content\"\r\n                        android:layout_margin=\"8dp\"\r\n                        android:orientation=\"horizontal\">\r\n                        <com.google.android.material.button.MaterialButton\r\n                            android:layout_width=\"wrap_content\"\r\n                            android:layout_height=\"wrap_content\"\r\n                            android:layout_marginEnd=\"8dp\"\r\n                            android:id=\"@+id/r5\"\r\n                            android:text=\"@string/register\"\r\n                            style=\"?attr/borderlessButtonStyle\"\r\n                            />\r\n\r\n                    </LinearLayout>\r\n\r\n                </LinearLayout>\r\n\r\n            </com.google.android.material.card.MaterialCardView>\r\n        </LinearLayout>\r\n    </ScrollView>\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_slideshow.xml	(revision 56757b4ad22b2e1848139a368cff3f918318ac02)
++++ app/src/main/res/layout/fragment_slideshow.xml	(date 1613717137645)
+@@ -1,24 +1,26 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    android:orientation="vertical" android:layout_width="match_parent"
++    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    >
+-    <ScrollView android:layout_marginTop="30dp"
++    android:orientation="vertical">
++
++    <ScrollView
++        android:id="@+id/scrollView"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+-        android:id="@+id/scrollView">
++        android:layout_marginTop="30dp">
+ 
+ 
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+-            android:orientation="vertical" >
++            android:orientation="vertical">
+ 
+             <com.google.android.material.card.MaterialCardView
+                 android:id="@+id/card1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_margin="8dp">
++                android:layout_margin="15dp">
+ 
+                 <LinearLayout
+                     android:layout_width="match_parent"
+@@ -28,36 +30,22 @@
+                     <!-- Media -->
+                     <ImageView
+                         android:layout_width="match_parent"
+-                        android:layout_height="194dp"
+-                        android:src="@drawable/tedx"
++                        android:layout_height="200dp"
++                        android:contentDescription="TODO"
+                         android:scaleType="centerCrop"
+-                        android:contentDescription="TODO" />
+-
+-                    <LinearLayout
+-                        android:layout_width="match_parent"
+-                        android:layout_height="wrap_content"
+-                        android:orientation="vertical"
+-                        android:padding="16dp"/>
+-
+-                    <!-- Buttons -->
+-                    <LinearLayout
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:layout_margin="8dp"
+-                        android:orientation="horizontal">
++                        android:src="@drawable/tedx" />
+ 
+-                        <com.google.android.material.button.MaterialButton
+-                            android:id="@+id/r1"
+-                            style="?attr/borderlessButtonStyle"
+-                            android:layout_width="wrap_content"
+-                            android:layout_height="wrap_content"
+-                            android:layout_marginEnd="8dp"
+-                            android:text="@string/register" />
+-                    </LinearLayout>
++                    <com.google.android.material.button.MaterialButton
++                        android:id="@+id/r1"
++
++                        android:layout_width="wrap_content"
++                        android:layout_height="match_parent"
++                        android:text="@string/register" />
+ 
+                 </LinearLayout>
+ 
+             </com.google.android.material.card.MaterialCardView>
++
+             <com.google.android.material.card.MaterialCardView
+                 android:id="@+id/card2"
+                 android:layout_width="match_parent"
+@@ -69,45 +57,26 @@
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+ 
+-                    <!-- Media -->
++
+                     <ImageView
+                         android:layout_width="match_parent"
+-                        android:layout_height="194dp"
+-                        android:src="@drawable/tedx"
++                        android:layout_height="200dp"
+                         android:scaleType="centerCrop"
+-                        />
+-
+-                    <LinearLayout
+-                        android:layout_width="match_parent"
+-                        android:layout_height="wrap_content"
+-                        android:orientation="vertical"
+-                        android:padding="16dp">
++                        android:src="@drawable/event_ignite" />
+ 
+-                        <!-- Title, secondary and supporting text -->
+ 
+-                    </LinearLayout>
+-
+-                    <!-- Buttons -->
+-                    <LinearLayout
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:layout_margin="8dp"
+-                        android:orientation="horizontal">
+-                        <com.google.android.material.button.MaterialButton
+-                            android:layout_width="wrap_content"
+-                            android:layout_height="wrap_content"
+-                            android:layout_marginEnd="8dp"
+-                            android:text="@string/register"
+-                            android:id="@+id/r2"
+-                            style="?attr/borderlessButtonStyle"
+-                            />
+-                    </LinearLayout>
++                    <com.google.android.material.button.MaterialButton
++                        android:id="@+id/r2"
++                        android:layout_width="wrap_content"
++                        android:layout_height="match_parent"
++                        android:layout_marginEnd="8dp"
++                        android:text="@string/register" />
+ 
+                 </LinearLayout>
+ 
+             </com.google.android.material.card.MaterialCardView>
++
+             <com.google.android.material.card.MaterialCardView
+-                android:id="@+id/card"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="8dp">
+@@ -117,46 +86,27 @@
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+ 
+-                    <!-- Media -->
++
+                     <ImageView
+                         android:layout_width="match_parent"
+-                        android:layout_height="194dp"
++                        android:layout_height="200dp"
+                         android:scaleType="centerCrop"
+-                        android:src="@drawable/tedx"/>
+-
+-                    <LinearLayout
+-                        android:layout_width="match_parent"
+-                        android:layout_height="wrap_content"
+-                        android:orientation="vertical"
+-                        android:padding="16dp">
+-
+-                        <!-- Title, secondary and supporting text -->
+-
++                        android:src="@drawable/event_chakdey" />
+ 
+-                    </LinearLayout>
+-
+-                    <!-- Buttons -->
+-                    <LinearLayout
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:layout_margin="8dp"
+-                        android:orientation="horizontal">
+-                        <com.google.android.material.button.MaterialButton
+-                            android:layout_width="wrap_content"
+-                            android:layout_height="wrap_content"
+-                            android:layout_marginEnd="8dp"
+-                            android:id="@+id/r3"
+-                            android:text="@string/register"
+-                            style="?attr/borderlessButtonStyle"
+-                            />
+-
+-                    </LinearLayout>
++                    <com.google.android.material.button.MaterialButton
++                        android:id="@+id/r3"
++
++                        android:layout_width="wrap_content"
++                        android:layout_height="match_parent"
++                        android:layout_marginEnd="8dp"
++                        android:text="@string/register" />
++
+ 
+                 </LinearLayout>
+ 
+             </com.google.android.material.card.MaterialCardView>
++
+             <com.google.android.material.card.MaterialCardView
+-                android:id="@+id/card"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="8dp">
+@@ -174,35 +124,17 @@
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/tedx" />
+ 
+-                    <LinearLayout
+-                        android:layout_width="match_parent"
+-                        android:layout_height="wrap_content"
+-                        android:orientation="vertical"
+-                        android:padding="16dp">
+-
+ 
+-                    </LinearLayout>
+-
+-                    <!-- Buttons -->
+-                    <LinearLayout
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:layout_margin="8dp"
+-                        android:orientation="horizontal">
+-                        <com.google.android.material.button.MaterialButton
+-                            android:layout_width="wrap_content"
+-                            android:layout_height="wrap_content"
+-                            android:layout_marginEnd="8dp"
+-                            android:id="@+id/r4"
+-                            android:text="@string/register"
+-                            style="?attr/borderlessButtonStyle"
+-                            />
+-
+-                    </LinearLayout>
++                    <com.google.android.material.button.MaterialButton
++                        android:id="@+id/r4"
++                        android:layout_width="wrap_content"
++                        android:layout_height="match_parent"
++                        android:text="@string/register" />
+ 
+                 </LinearLayout>
+ 
+             </com.google.android.material.card.MaterialCardView>
++
+             <com.google.android.material.card.MaterialCardView
+                 android:id="@+id/card"
+                 android:layout_width="match_parent"
+@@ -214,42 +146,18 @@
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+ 
+-                    <!-- Media -->
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="194dp"
+-                        android:src="@drawable/tedx"
+                         android:scaleType="centerCrop"
+-
+-                        />
++                        android:src="@drawable/tedx" />
+ 
+-                    <LinearLayout
+-                        android:layout_width="match_parent"
+-                        android:layout_height="wrap_content"
+-                        android:orientation="vertical"
+-                        android:padding="16dp">
+-
+-
+-
+-                    </LinearLayout>
+-
+-                    <!-- Buttons -->
+-                    <LinearLayout
+-                        android:layout_width="wrap_content"
+-                        android:layout_height="wrap_content"
+-                        android:layout_margin="8dp"
+-                        android:orientation="horizontal">
+-                        <com.google.android.material.button.MaterialButton
+-                            android:layout_width="wrap_content"
+-                            android:layout_height="wrap_content"
+-                            android:layout_marginEnd="8dp"
+-                            android:id="@+id/r5"
+-                            android:text="@string/register"
+-                            style="?attr/borderlessButtonStyle"
+-                            />
+-
+-                    </LinearLayout>
+-
++                    <com.google.android.material.button.MaterialButton
++                        android:id="@+id/r5"
++                        android:layout_width="wrap_content"
++                        android:layout_height="match_parent"
++                        android:layout_marginEnd="8dp"
++                        android:text="@string/register" />
+                 </LinearLayout>
+ 
+             </com.google.android.material.card.MaterialCardView>
+Index: app/src/main/java/com/example/eureka_gni/ui/home/HomeFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.eureka_gni.ui.home\r\n\r\nimport android.content.Context\r\nimport android.content.Intent\r\nimport android.net.ConnectivityManager\r\nimport android.os.Build\r\nimport android.os.Bundle\r\nimport android.util.Log\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport android.widget.TextView\r\nimport android.widget.Toast\r\nimport androidx.cardview.widget.CardView\r\nimport androidx.fragment.app.Fragment\r\nimport androidx.viewpager.widget.ViewPager\r\nimport com.example.eureka_gni.R\r\nimport com.google.firebase.firestore.DocumentReference\r\nimport com.google.firebase.firestore.FirebaseFirestore\r\n\r\nclass HomeFragment : Fragment() {\r\n\r\n\r\n\r\n    var viewPager: ViewPager? = null\r\n    var adapter: CustomSwipeAdapter? = null\r\n    lateinit var detail:String\r\n\r\n\r\n\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n        val view = inflater.inflate(R.layout.fragment_home, container, false)\r\n        val checkinout=view.findViewById<CardView>(R.id.cincout)\r\n        val dev_mail=view.findViewById<TextView>(R.id.devmail)\r\n        val contact=view.findViewById<CardView>(R.id.contactus)\r\n        val results =view.findViewById<CardView>(R.id.results)\r\n        val exams=view.findViewById<CardView>(R.id.exam)\r\n        val\r\n                viewPager = view.findViewById<View>(R.id.view_pager) as ViewPager\r\n        adapter = CustomSwipeAdapter(this.activity)\r\n        viewPager!!.adapter = adapter\r\n\r\n\r\n        checkinout.setOnClickListener {\r\n           // startActivity(Intent(requireActivity().baseContext, CheckInOutActivity::class.java))\r\n        }\r\n        contact.setOnClickListener {\r\n            //startActivity(Intent(requireActivity().baseContext, ContactUsActivity::class.java))\r\n        }\r\n\r\n        results.setOnClickListener {\r\n            //startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))\r\n        }\r\n        exams.setOnClickListener {\r\n            val cm = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager\r\n\r\n            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {\r\n                val n = cm.activeNetwork\r\n                if (n != null) {\r\n                    val nc = cm.getNetworkCapabilities(n)\r\n                    //It will check for both wifi and cellular network\r\n                    Toast.makeText(\r\n                        requireActivity().baseContext,\r\n                        \" there\",\r\n                        Toast.LENGTH_LONG\r\n                    ).show()\r\n\r\n                }\r\n                else {\r\n                    Toast.makeText(\r\n                        requireActivity().baseContext,\r\n                        \"nope\",\r\n                        Toast.LENGTH_LONG\r\n                    ).show()\r\n                }\r\n\r\n            }\r\n        }\r\n\r\n\r\n\r\n        dev_mail?.setOnClickListener {\r\n            val intent = Intent(Intent.ACTION_SEND)\r\n            val recipients = arrayOf(\"ringpisolve@gmail.com\")\r\n            intent.putExtra(Intent.EXTRA_EMAIL, recipients)\r\n            intent.putExtra(Intent.EXTRA_SUBJECT, \"Subject text here...\")\r\n            intent.putExtra(Intent.EXTRA_TEXT, \"Body of the content here...\")\r\n            intent.putExtra(Intent.EXTRA_CC, \"mailcc@gmail.com\")\r\n            intent.type = \"text/html\"\r\n            intent.setPackage(\"com.google.android.gm\")\r\n            startActivity(Intent.createChooser(intent, \"Send mail\"))\r\n        }\r\n        return view\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/eureka_gni/ui/home/HomeFragment.kt	(revision 56757b4ad22b2e1848139a368cff3f918318ac02)
++++ app/src/main/java/com/example/eureka_gni/ui/home/HomeFragment.kt	(date 1613636759425)
+@@ -15,8 +15,9 @@
+ import androidx.fragment.app.Fragment
+ import androidx.viewpager.widget.ViewPager
+ import com.example.eureka_gni.R
+-import com.google.firebase.firestore.DocumentReference
+-import com.google.firebase.firestore.FirebaseFirestore
++import com.example.eureka_gni.ui.gallery.GalleryFragment
++import com.example.eureka_gni.ui.slideshow.SlideshowFragment
++
+ 
+ class HomeFragment : Fragment() {
+ 
+@@ -33,58 +34,36 @@
+         savedInstanceState: Bundle?
+     ): View? {
+         val view = inflater.inflate(R.layout.fragment_home, container, false)
+-        val checkinout=view.findViewById<CardView>(R.id.cincout)
++        val events=view.findViewById<CardView>(R.id.events)
+         val dev_mail=view.findViewById<TextView>(R.id.devmail)
+-        val contact=view.findViewById<CardView>(R.id.contactus)
++        val clubs=view.findViewById<CardView>(R.id.clubs)
+         val results =view.findViewById<CardView>(R.id.results)
+-        val exams=view.findViewById<CardView>(R.id.exam)
++        val visitGni=view.findViewById<CardView>(R.id.visitGni)
+         val
+                 viewPager = view.findViewById<View>(R.id.view_pager) as ViewPager
+         adapter = CustomSwipeAdapter(this.activity)
+         viewPager!!.adapter = adapter
+ 
+ 
+-        checkinout.setOnClickListener {
+-           // startActivity(Intent(requireActivity().baseContext, CheckInOutActivity::class.java))
++        events?.setOnClickListener {
++           startActivity(Intent(requireActivity().baseContext, SlideshowFragment::class.java))
+         }
+-        contact.setOnClickListener {
+-            //startActivity(Intent(requireActivity().baseContext, ContactUsActivity::class.java))
++        clubs.setOnClickListener {
++            startActivity(Intent(requireActivity().baseContext, GalleryFragment::class.java))
+         }
+ 
+         results.setOnClickListener {
+             //startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))
+         }
+-        exams.setOnClickListener {
+-            val cm = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+-
+-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+-                val n = cm.activeNetwork
+-                if (n != null) {
+-                    val nc = cm.getNetworkCapabilities(n)
+-                    //It will check for both wifi and cellular network
+-                    Toast.makeText(
+-                        requireActivity().baseContext,
+-                        " there",
+-                        Toast.LENGTH_LONG
+-                    ).show()
++        visitGni.setOnClickListener {
+ 
+-                }
+-                else {
+-                    Toast.makeText(
+-                        requireActivity().baseContext,
+-                        "nope",
+-                        Toast.LENGTH_LONG
+-                    ).show()
+-                }
+-
+-            }
+         }
+ 
+ 
+ 
+         dev_mail?.setOnClickListener {
+             val intent = Intent(Intent.ACTION_SEND)
+-            val recipients = arrayOf("ringpisolve@gmail.com")
++            val recipients = arrayOf("eurekaGni@gmail.com")
+             intent.putExtra(Intent.EXTRA_EMAIL, recipients)
+             intent.putExtra(Intent.EXTRA_SUBJECT, "Subject text here...")
+             intent.putExtra(Intent.EXTRA_TEXT, "Body of the content here...")
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Mon Jun 08 20:53:56 IST 2020\r\ndistributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.1.1-all.zip\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+--- gradle/wrapper/gradle-wrapper.properties	(revision 56757b4ad22b2e1848139a368cff3f918318ac02)
++++ gradle/wrapper/gradle-wrapper.properties	(date 1613578647509)
+@@ -1,6 +1,6 @@
+-#Mon Jun 08 20:53:56 IST 2020
++#Wed Feb 17 21:47:27 IST 2021
+ distributionBase=GRADLE_USER_HOME
+ distributionPath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:orientation=\"vertical\"\r\n    tools:context=\".MainActivity\">\r\n\r\n\r\n    <TextView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:padding=\"5dp\"\r\n        android:id=\"@+id/schname\"\r\n        android:text=\"EUREKA GNI\"\r\n        android:textSize=\"24sp\"\r\n        android:textStyle=\"bold\"\r\n        android:textColor=\"@color/colorPrimary\"\r\n        android:gravity=\"center_horizontal\"\r\n        android:layout_gravity=\"top\" />\r\n    <androidx.viewpager.widget.ViewPager\r\n        android:id=\"@+id/view_pager\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"200dp\"\r\n        >\r\n\r\n        <Button\r\n            android:id=\"@+id/button2\"\r\n            android:text=\"Button\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\" />\r\n    </androidx.viewpager.widget.ViewPager>\r\n\r\n\r\n    <GridLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginRight=\"10sp\"\r\n        android:layout_marginLeft=\"10sp\"\r\n        android:rowCount=\"2\"\r\n        android:columnCount=\"2\">\r\n\r\n\r\n        <androidx.cardview.widget.CardView\r\n            android:id=\"@+id/cincout\"\r\n            android:layout_gravity=\"fill\"\r\n            android:layout_rowWeight=\"1\"\r\n            android:layout_columnWeight=\"1\"\r\n            android:layout_margin=\"10sp\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            app:cardBackgroundColor=\"#fff\"\r\n            app:cardCornerRadius=\"10sp\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"5dp\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/icon\"\r\n                    android:src=\"@drawable/baseline_done_white_48dp\"\r\n                    android:layout_height=\"50dp\"\r\n                    android:layout_width=\"50dp\"\r\n                    android:layout_margin=\"10dp\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:padding=\"10dp\"\r\n                    android:background=\"@drawable/shape_primary\"\r\n                    />\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"checkin_out\"\r\n                    android:textSize=\"15sp\"\r\n                    android:textAlignment=\"center\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:textColor=\"#000\" />\r\n            </LinearLayout>\r\n        </androidx.cardview.widget.CardView>\r\n\r\n        <androidx.cardview.widget.CardView\r\n            android:id=\"@+id/exam\"\r\n            android:layout_gravity=\"fill\"\r\n            android:layout_rowWeight=\"1\"\r\n            android:layout_columnWeight=\"1\"\r\n            android:layout_margin=\"10sp\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            app:cardBackgroundColor=\"#fff\"\r\n            app:cardCornerRadius=\"10sp\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"5dp\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/icon2\"\r\n                    android:src=\"@drawable/examicon\"\r\n                    android:layout_height=\"50dp\"\r\n                    android:layout_width=\"50dp\"\r\n                    android:layout_margin=\"10dp\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:padding=\"10dp\"\r\n                    android:background=\"@drawable/shape2\" />\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"exam\"\r\n                    android:textSize=\"15sp\"\r\n                    android:textAlignment=\"center\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:textColor=\"#000\" />\r\n            </LinearLayout>\r\n        </androidx.cardview.widget.CardView>\r\n\r\n\r\n        <androidx.cardview.widget.CardView\r\n            android:id=\"@+id/results\"\r\n            android:layout_gravity=\"fill\"\r\n            android:layout_rowWeight=\"1\"\r\n            android:layout_columnWeight=\"1\"\r\n            android:layout_margin=\"10sp\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"28dp\"\r\n            app:cardBackgroundColor=\"#fff\"\r\n            app:cardCornerRadius=\"10sp\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"match_parent\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"5dp\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/icon3\"\r\n                    android:src=\"@drawable/resultsicon\"\r\n                    android:layout_height=\"50dp\"\r\n                    android:layout_width=\"50dp\"\r\n                    android:layout_margin=\"10dp\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:padding=\"10dp\"\r\n                    android:background=\"@drawable/shape3\" />\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"results\"\r\n                    android:textSize=\"15sp\"\r\n                    android:textAlignment=\"center\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:textColor=\"#000\" />\r\n            </LinearLayout>\r\n        </androidx.cardview.widget.CardView>\r\n\r\n\r\n        <androidx.cardview.widget.CardView\r\n            android:id=\"@+id/contactus\"\r\n            android:layout_gravity=\"fill\"\r\n            android:layout_rowWeight=\"1\"\r\n            android:layout_columnWeight=\"1\"\r\n            android:layout_margin=\"10sp\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            app:cardBackgroundColor=\"#fff\"\r\n            app:cardCornerRadius=\"10sp\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:gravity=\"center\"\r\n                android:padding=\"5dp\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/icon4\"\r\n                    android:src=\"@drawable/baseline_person_white_48dp\"\r\n                    android:layout_height=\"50dp\"\r\n                    android:layout_width=\"50dp\"\r\n                    android:layout_margin=\"10dp\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:padding=\"10dp\"\r\n                    android:background=\"@drawable/shape4\" />\r\n\r\n                <TextView\r\n                    android:layout_width=\"102dp\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"contact_us\"\r\n                    android:textSize=\"15sp\"\r\n                    android:textAlignment=\"center\"\r\n                    android:layout_gravity=\"center\"\r\n                    android:textColor=\"#000\" />\r\n            </LinearLayout>\r\n        </androidx.cardview.widget.CardView>\r\n    </GridLayout>\r\n\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"fill_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        >\r\n\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:text=\"contact_developer\"\r\n            android:gravity=\"center_horizontal\"\r\n            android:layout_gravity=\"bottom\" />\r\n        <TextView\r\n            android:id=\"@+id/devmail\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:text=\"developer_email\"\r\n            android:gravity=\"center_horizontal\"\r\n            android:textColor=\"@color/colorAccent\"\r\n            android:layout_marginBottom=\"10dp\"\r\n            android:layout_gravity=\"bottom\" />\r\n\r\n    </LinearLayout>\r\n\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_home.xml	(revision 56757b4ad22b2e1848139a368cff3f918318ac02)
++++ app/src/main/res/layout/fragment_home.xml	(date 1613634646799)
+@@ -14,7 +14,7 @@
+         android:padding="5dp"
+         android:id="@+id/schname"
+         android:text="EUREKA GNI"
+-        android:textSize="24sp"
++        android:textSize="30sp"
+         android:textStyle="bold"
+         android:textColor="@color/colorPrimary"
+         android:gravity="center_horizontal"
+@@ -43,7 +43,7 @@
+ 
+ 
+         <androidx.cardview.widget.CardView
+-            android:id="@+id/cincout"
++            android:id="@+id/events"
+             android:layout_gravity="fill"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+@@ -62,7 +62,7 @@
+ 
+                 <ImageView
+                     android:id="@+id/icon"
+-                    android:src="@drawable/baseline_done_white_48dp"
++                    android:src="@drawable/event_outline_event_white_24"
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:layout_margin="10dp"
+@@ -74,7 +74,7 @@
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+-                    android:text="checkin_out"
++                    android:text="@string/events"
+                     android:textSize="15sp"
+                     android:textAlignment="center"
+                     android:layout_gravity="center"
+@@ -83,7 +83,7 @@
+         </androidx.cardview.widget.CardView>
+ 
+         <androidx.cardview.widget.CardView
+-            android:id="@+id/exam"
++            android:id="@+id/clubs"
+             android:layout_gravity="fill"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+@@ -102,7 +102,7 @@
+ 
+                 <ImageView
+                     android:id="@+id/icon2"
+-                    android:src="@drawable/examicon"
++                    android:src="@drawable/round_groups_white_24dp"
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:layout_margin="10dp"
+@@ -113,11 +113,11 @@
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+-                    android:text="exam"
+-                    android:textSize="15sp"
+-                    android:textAlignment="center"
+                     android:layout_gravity="center"
+-                    android:textColor="#000" />
++                    android:text="GNI CLUBS"
++                    android:textAlignment="center"
++                    android:textColor="#000"
++                    android:textSize="15sp" />
+             </LinearLayout>
+         </androidx.cardview.widget.CardView>
+ 
+@@ -163,7 +163,7 @@
+ 
+ 
+         <androidx.cardview.widget.CardView
+-            android:id="@+id/contactus"
++            android:id="@+id/visitGni"
+             android:layout_gravity="fill"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+@@ -182,7 +182,7 @@
+ 
+                 <ImageView
+                     android:id="@+id/icon4"
+-                    android:src="@drawable/baseline_person_white_48dp"
++                    android:src="@drawable/link_icon"
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:layout_margin="10dp"
+@@ -193,7 +193,7 @@
+                 <TextView
+                     android:layout_width="102dp"
+                     android:layout_height="wrap_content"
+-                    android:text="contact_us"
++                    android:text="@string/visit_gni"
+                     android:textSize="15sp"
+                     android:textAlignment="center"
+                     android:layout_gravity="center"
+@@ -204,6 +204,7 @@
+ 
+ 
+     <LinearLayout
++        android:layout_marginTop="30dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+@@ -212,14 +213,14 @@
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+-            android:text="contact_developer"
++            android:text="@string/contact_developer"
+             android:gravity="center_horizontal"
+             android:layout_gravity="bottom" />
+         <TextView
+             android:id="@+id/devmail"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+-            android:text="developer_email"
++            android:text="developerTeam@gmail.com"
+             android:gravity="center_horizontal"
+             android:textColor="@color/colorAccent"
+             android:layout_marginBottom="10dp"
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Eureka-GNI</string>\r\n    <string name=\"navigation_drawer_open\">Open navigation drawer</string>\r\n    <string name=\"navigation_drawer_close\">Close navigation drawer</string>\r\n    <string name=\"nav_header_title\">Android Studio</string>\r\n    <string name=\"nav_header_subtitle\">android.studio@android.com</string>\r\n    <string name=\"nav_header_desc\">Navigation header</string>\r\n    <string name=\"action_settings\">Settings</string>\r\n\r\n    <string name=\"menu_home\">Home</string>\r\n    <string name=\"menu_gallery\">Gallery</string>\r\n    <string name=\"menu_slideshow\">Live Events</string>\r\n    <string name=\"register\">Register</string>\r\n    <string name=\"club4\">MISSION: The Mission of this club is to preserve, promote and disseminate all forms of art and culture.\r\n\r\n\\nVISION: The vision of the Cultural club-YOUtsav is to provide a supportive environment for the interested students to share their creativity, knowledge and passion for while attending Guru Nanak Institutions. It is our vision that we will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in all the events.</string>\r\n    <string name=\"club2\">VISION: This club was created with the sole purpose of honing technical skills of our club members and other students and also introduce new technologies to students. This club also helps the students in completing their individual project with the help of senior developers (mentors).\r\n\r\n\\nMISSION: The major objective of this technical club is to create a work environment where the students can share and develop their technical perceptions.\r\n\r\nFacilitate foster networking with alumni, industries, institutions and other stake-holders.</string>\r\n    <string name=\"club3\">MISSION: Street cause GNI is a student run organizationwhich intend to do something for the betterment of society.We take up projects that creates impact and fulfil the necessity of people who are in need. We hold regular meeting, discussions and organize projects based on various social issues.\r\n\r\n\\nVISION: The vision of Street Cause GNI is to provide a platform to the students of Gurunanak Institution who are enthusiastic and concern about the change in society. Here the students are exploredto various issues in society and work on it , this way they improve their coping skills. Working in a group they learn team work , communication skills and time management. It is our vision that Street Cause GNI will be able to get more awareness and support from students of all departments by sharing the details of projects that are held for a good cause.</string>\r\n    <string name=\"home_second\">Home Second</string>\r\n    <string name=\"club1\">MISSION: The club will hold regular meetings and discussions and organize monthly events based on photography and non-photography, lectures and workshops by various artists.\r\n        \\nVISION: The vision of the Photography Club-‘CLICKS’ @ GNI is to provide a supportive environment for the interested photography students to share their creativity, knowledge and passion for photography while attending Guru Nanak Institutions. It is our vision that photography club will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in photographic events as well as in extracurricular activities/events.</string>\r\n\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n</resources>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 56757b4ad22b2e1848139a368cff3f918318ac02)
++++ app/src/main/res/values/strings.xml	(date 1613579664687)
+@@ -28,4 +28,7 @@
+ 
+     <!-- TODO: Remove or change this placeholder text -->
+     <string name="hello_blank_fragment">Hello blank fragment</string>
++    <string name="contact_developer">Contact Developer</string>
++    <string name="events">Events</string>
++    <string name="visit_gni">Visit GNI</string>
+ </resources>
+Index: app/src/main/res/drawable-v24/shape3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/shape3.xml	(date 1607583690302)
++++ app/src/main/res/drawable-v24/shape3.xml	(date 1607583690302)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++	xmlns:android="http://schemas.android.com/apk/res/android"
++	android:shape="oval">
++	
++	<solid
++		android:color="#db7772"/>
++	
++	<size
++		android:width="120dp"
++		android:height="120dp"/>
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable-v24/shape2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/shape2.xml	(date 1607583690302)
++++ app/src/main/res/drawable-v24/shape2.xml	(date 1607583690302)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++	xmlns:android="http://schemas.android.com/apk/res/android"
++	android:shape="oval">
++	
++	<solid
++		android:color="#5e6db4"/>
++	
++	<size
++		android:width="120dp"
++		android:height="120dp"/>
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable-v24/shape_primary.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/shape_primary.xml	(date 1607583690303)
++++ app/src/main/res/drawable-v24/shape_primary.xml	(date 1607583690303)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++xmlns:android="http://schemas.android.com/apk/res/android"
++android:shape="oval">
++
++<solid
++	android:color="#f3a555"/>
++
++<size
++	android:width="120dp"
++	android:height="120dp"/>
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable-v24/shape4.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-v24/shape4.xml	(date 1607583690302)
++++ app/src/main/res/drawable-v24/shape4.xml	(date 1607583690302)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++	xmlns:android="http://schemas.android.com/apk/res/android"
++	android:shape="oval">
++	
++	<solid
++		android:color="#96c259"/>
++	
++	<size
++		android:width="120dp"
++		android:height="120dp"/>
++</shape>
+\ No newline at end of file
