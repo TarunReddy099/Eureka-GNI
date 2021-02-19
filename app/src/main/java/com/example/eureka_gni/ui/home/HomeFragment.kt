@@ -14,6 +14,8 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
+import com.example.eureka_gni.ClubJoiningActivity
+import com.example.eureka_gni.EventActivity
 import com.example.eureka_gni.R
 import com.example.eureka_gni.ResultsHomeActivity
 import com.example.eureka_gni.ui.gallery.GalleryFragment
@@ -46,11 +48,11 @@ class HomeFragment : Fragment() {
         viewPager!!.adapter = adapter
 
 
-        events?.setOnClickListener {
-           //startActivity(Intent(requireActivity().baseContext, SlideshowFragment::class.java))
+        events.setOnClickListener {
+           startActivity(Intent(requireActivity().baseContext, EventActivity::class.java))
         }
         clubs.setOnClickListener {
-            //startActivity(Intent(requireActivity().baseContext, GalleryFragment::class.java))
+            startActivity(Intent(requireActivity().baseContext, ClubJoiningActivity::class.java))
         }
 
         results.setOnClickListener {
