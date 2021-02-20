@@ -5,299 +5,240 @@
     android:layout_height="match_parent"
     tools:context=".ClubJoiningActivity">
 
-    <ScrollView
-        android:id="@+id/ScrollView02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-        <HorizontalScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:scrollbars="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="3dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="30dp"
+                android:layout_height="wrap_content">
 
-                    <LinearLayout
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+
+                    <!-- Buttons -->
+
+                    <!-- Title, secondary and supporting text -->
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clicksgni" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Clicks@Gni"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/clicks"
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:layout_margin="15sp"
+                        android:text="@string/club1"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/joinclicks"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Join The Club"
+                        android:textSize="15sp" />
 
-                        <!-- Media -->
+                </LinearLayout>
 
-                        <!-- Buttons -->
+            </com.google.android.material.card.MaterialCardView>
 
-                        <ImageView
-                            android:layout_width="418dp"
-                            android:layout_height="359dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/clicksgni" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Clicks@Gni"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/techmatz" />
 
-                            <TextView
-                                android:layout_width="348dp"
-                                android:layout_height="280dp"
-                                android:layout_marginTop="16dp"
-                                android:id="@+id/clicks"
-                                android:text="@string/club1"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary" />
 
-                        </LinearLayout>
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="TechMatz"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
 
-                            <com.google.android.material.button.MaterialButton
-                                style="?attr/borderlessButtonStyle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:id="@+id/joinclicks"
-                                android:text="Join The Club" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:layout_margin="15sp"
+                        android:text="@string/club2"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
 
-                        </LinearLayout>
 
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="3dp">
-
-                    <LinearLayout
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/jointechmatz"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <!-- Media -->
-
-                        <!-- Buttons -->
-                        <ImageView
-                            android:layout_width="418dp"
-                            android:layout_height="465dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/techmatz" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="TechMatz"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Join The Club"
+                        android:layout_gravity="center"
+                        android:textSize="15sp" />
 
 
+                </LinearLayout>
 
-                            <TextView
-                                android:layout_width="348dp"
-                                android:layout_height="280dp"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/club2"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary" />
+            </com.google.android.material.card.MaterialCardView>
 
-                        </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                android:layout_height="wrap_content">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                            <com.google.android.material.button.MaterialButton
-                                style="?attr/borderlessButtonStyle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:id="@+id/jointechmatz"
-                                android:text="Join The Club" />
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/club_streetcause" />
 
-                        </LinearLayout>
 
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Street Cause GNI"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
 
-                </com.google.android.material.card.MaterialCardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:layout_margin="15dp"
+                        android:text="@string/club3"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="3dp">
 
-                    <LinearLayout
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/joinstrretcause"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="Join The Club"
+                        android:textSize="15sp" />
 
-                        <!-- Media -->
-                        <ImageView
-                            android:layout_width="418dp"
-                            android:layout_height="359dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/streetcause" />
 
-                        <!-- Buttons -->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
+                </LinearLayout>
 
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Street Cause GNI"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
+            </com.google.android.material.card.MaterialCardView>
 
-                            <TextView
-                                android:layout_width="348dp"
-                                android:layout_height="280dp"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/club3"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary" />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="30dp"
+                android:layout_height="wrap_content">
 
-                        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
+                    <!-- Media -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                       android:adjustViewBounds="true"
+                        android:src="@drawable/youstavgni" />
 
-                            <com.google.android.material.button.MaterialButton
-                                style="?attr/borderlessButtonStyle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:id="@+id/joinstrretcause"
-                                android:text="Join The Club" />
+                    <!-- Buttons -->
 
-                        </LinearLayout>
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:text="Youstav Gni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="center"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textSize="30dp"
+                        android:textStyle="bold"/>
 
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:layout_margin="15sp"
+                        android:text="@string/club4"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
 
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="3dp">
-
-                    <LinearLayout
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/joinyoustav"
+                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_gravity="center"
+                        android:layout_height="60dp"
+                        android:textSize="15sp"
+                        android:text="Join The Club" />
 
-                        <!-- Media -->
-                        <ImageView
-                            android:layout_width="418dp"
-                            android:layout_height="439dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/youstavgni" />
+                </LinearLayout>
 
-                        <!-- Buttons -->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Youstav Gni"
-                                android:textAppearance="?attr/textAppearanceHeadline6" />
-
-                            <TextView
-                                android:layout_width="348dp"
-                                android:layout_height="280dp"
-                                android:layout_marginTop="16dp"
-                                android:text="@string/club4"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
-
-                            <com.google.android.material.button.MaterialButton
-                                style="?attr/borderlessButtonStyle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:id="@+id/joinyoustav"
-                                android:text="Join The Club" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
 
-            </LinearLayout>
+        </LinearLayout>
 
-        </HorizontalScrollView>
-    </ScrollView>
+    </HorizontalScrollView>
 
 </RelativeLayout>
