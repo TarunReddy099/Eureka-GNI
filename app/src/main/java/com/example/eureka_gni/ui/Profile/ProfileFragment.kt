@@ -6,9 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.eureka_gni.ClubJoiningForms
 import com.example.eureka_gni.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ProfileFragment : Fragment() {
 
@@ -22,38 +27,40 @@ class ProfileFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_profile, container, false)
         val view: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
 
-        val c1=view.findViewById<Button>(R.id.joinclicks)
-        val c2=view.findViewById<Button>(R.id.jointechmatz)
-        val c3=view.findViewById<Button>(R.id.joinstrretcause)
-        val c4=view.findViewById<Button>(R.id.joinyoustav)
+       val name=view.findViewById<TextView>(R.id.studName)
+        val rollno=view.findViewById<TextView>(R.id.roll_no)
+        val branch=view.findViewById<TextView>(R.id.branchName)
+        val year=view.findViewById<TextView>(R.id.grad_year)
+       // val stdiimg=view.findViewById<ImageView>(R.id.studentImage)
+        val mFirestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+        val user = FirebaseAuth.getInstance().currentUser
+        val email: String = user?.email.toString()
+
+        val docRef: DocumentReference =
+            mFirestore.collection("users")
+                .document(email)
+        docRef.get().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val document = task.result
+                if (document != null) {
+
+                    val sname: String = document.getString("name").toString()
+                    val sroll: String = document.getString("roll").toString()
+                    val syear: String = document.getString("year").toString()
+                    val sbranch: String = document.getString("branch").toString()
+
+                    name.text=sname
+                    rollno.text=sroll
+                    branch.text=sbranch
+                    year.text=syear
 
 
 
-c1?.setOnClickListener {
-    val iii = Intent(requireActivity().baseContext, ClubJoiningForms::class.java)
-    iii.putExtra("clubtype","clicks")
-    requireActivity().startActivity(iii)
-}
-        c2?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext, ClubJoiningForms::class.java)
-            iii.putExtra("clubtype","techmatz")
-            requireActivity().startActivity(iii)
+
+
+                }
+            }
         }
-
-        c3?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext, ClubJoiningForms::class.java)
-            iii.putExtra("clubtype","streets")
-            requireActivity().startActivity(iii)
-        }
-
-        c4?.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext, ClubJoiningForms::class.java)
-            iii.putExtra("clubtype","youstav")
-            requireActivity().startActivity(iii)
-        }
-
-
-
 
 
 
