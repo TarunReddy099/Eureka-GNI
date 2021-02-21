@@ -38,4 +38,8 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="submit">SUBMIT</string>
     <string name="gni_clubs">GNI CLUBS</string>
     <string name="results">RESULTS</string>
+    <string name="eureka">EUREKA</string>
+    <string name="clubs">CLUBS</string>
+    <string name="website">WEBSITE</string>
+    <string name="todo">TODO</string>
 </resources>

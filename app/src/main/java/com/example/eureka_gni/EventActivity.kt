@@ -13,8 +13,8 @@ class EventActivity : AppCompatActivity() {
         val b1=findViewById<Button>(R.id.r1)
         val b2=findViewById<Button>(R.id.r2)
         val b3=findViewById<Button>(R.id.r3)
-        val b4=findViewById<Button>(R.id.r4)
-        val b5=findViewById<Button>(R.id.r5)
+        // val b4=findViewById<Button>(R.id.r4)
+        // val b5=findViewById<Button>(R.id.r5)
         b1.setOnClickListener {
             val iii = Intent(this,Register1Screen::class.java)
             iii.putExtra("event","e1")
@@ -33,7 +33,8 @@ class EventActivity : AppCompatActivity() {
             startActivity(iii)
 
         }
-        b4.setOnClickListener {
+
+       /* b4.setOnClickListener {
             val iii = Intent(this,Register1Screen::class.java)
             iii.putExtra("event","e4")
             startActivity(iii)
@@ -44,6 +45,7 @@ class EventActivity : AppCompatActivity() {
             iii.putExtra("event","e5")
             startActivity(iii)
 
-        }
+        } */
+
     }
 }

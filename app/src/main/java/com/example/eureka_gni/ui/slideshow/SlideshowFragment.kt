@@ -28,7 +28,7 @@ class SlideshowFragment : Fragment() {
         val b2=view!!.findViewById<Button>(R.id.r2)
         val b3=view!!.findViewById<Button>(R.id.r3)
         val b4=view!!.findViewById<Button>(R.id.r4)
-        val b5=view!!.findViewById<Button>(R.id.r5)
+       //val b5=view!!.findViewById<Button>(R.id.r5)
         b1?.setOnClickListener {
             val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
             iii.putExtra("event","e1")
@@ -53,12 +53,12 @@ class SlideshowFragment : Fragment() {
             requireActivity().startActivity(iii)
 
         }
-        b5?.setOnClickListener {
+       /* b5?.setOnClickListener {
             val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
             iii.putExtra("event","e5")
             requireActivity().startActivity(iii)
 
-        }
+        }*/
         return view
         return root
 
