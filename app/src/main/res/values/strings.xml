@@ -43,4 +43,6 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="website">WEBSITE</string>
     <string name="todo">TODO</string>
     <string name="my_profile">My Profile</string>
+    <string name="student_profile">STUDENT PROFILE</string>
+    <string name="student_picture">Student picture</string>
 </resources>

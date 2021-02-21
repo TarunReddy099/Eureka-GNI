@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ClubJoiningActivity"></activity>
         <activity android:name=".EventActivity" />
-        <activity android:name=".EventsActivity" />
         <activity android:name=".ResultsDisplay" />
         <activity android:name=".ResultsHomeActivity" />
         <activity android:name=".LoginActivity">
