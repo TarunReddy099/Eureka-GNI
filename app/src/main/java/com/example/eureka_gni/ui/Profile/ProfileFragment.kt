@@ -14,6 +14,8 @@ import com.example.eureka_gni.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.squareup.picasso.Picasso
+
 
 class ProfileFragment : Fragment() {
 
@@ -31,7 +33,7 @@ class ProfileFragment : Fragment() {
         val rollno=view.findViewById<TextView>(R.id.roll_no)
         val branch=view.findViewById<TextView>(R.id.branchName)
         val year=view.findViewById<TextView>(R.id.grad_year)
-       // val stdiimg=view.findViewById<ImageView>(R.id.studentImage)
+       val stdiimg=view.findViewById<ImageView>(R.id.studentImage)
         val mFirestore: FirebaseFirestore = FirebaseFirestore.getInstance()
         val user = FirebaseAuth.getInstance().currentUser
         val email: String = user?.email.toString()
@@ -48,13 +50,15 @@ class ProfileFragment : Fragment() {
                     val sroll: String = document.getString("roll").toString()
                     val syear: String = document.getString("year").toString()
                     val sbranch: String = document.getString("branch").toString()
+                    val surl: String = document.getString("img").toString()
+
 
                     name.text=sname
                     rollno.text=sroll
                     branch.text=sbranch
                     year.text=syear
 
-
+                    Picasso.get().load(surl).into(stdiimg);
 
 
 
