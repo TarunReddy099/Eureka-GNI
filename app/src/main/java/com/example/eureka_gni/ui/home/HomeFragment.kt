@@ -1,16 +1,11 @@
 package com.example.eureka_gni.ui.home
 
-import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
@@ -18,8 +13,6 @@ import com.example.eureka_gni.ClubJoiningActivity
 import com.example.eureka_gni.EventActivity
 import com.example.eureka_gni.R
 import com.example.eureka_gni.ResultsHomeActivity
-import com.example.eureka_gni.ui.gallery.GalleryFragment
-import com.example.eureka_gni.ui.slideshow.SlideshowFragment
 
 
 class HomeFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.eureka_gni.ui.gallery
+package com.example.eureka_gni.ui.Profile
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.eureka_gni.ClubJoiningForms
 import com.example.eureka_gni.R
 
-class GalleryFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
 
 
@@ -19,8 +19,8 @@ class GalleryFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val view: View = inflater!!.inflate(R.layout.fragment_gallery, container, false)
+        val root = inflater.inflate(R.layout.fragment_profile, container, false)
+        val view: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
 
         val c1=view.findViewById<Button>(R.id.joinclicks)
         val c2=view.findViewById<Button>(R.id.jointechmatz)
