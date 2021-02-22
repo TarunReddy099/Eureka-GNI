@@ -9,10 +9,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
-import com.example.eureka_gni.ClubJoiningActivity
-import com.example.eureka_gni.EventActivity
-import com.example.eureka_gni.R
-import com.example.eureka_gni.ResultsHomeActivity
+import com.example.eureka_gni.*
 
 
 class HomeFragment : Fragment() {
@@ -52,7 +49,9 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))
         }
         visitGni.setOnClickListener {
-
+            val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
+            iii.putExtra("event","clgsite")
+            requireActivity().startActivity(iii)
         }
 
 
