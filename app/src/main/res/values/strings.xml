@@ -35,7 +35,7 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
     <string name="login">LOGIN</string>
-    <string name="submit">SUBMIT</string>
+    <string name="submit1">SUBMIT</string>
     <string name="gni_clubs">GNI CLUBS</string>
     <string name="results">RESULTS</string>
     <string name="eureka">EUREKA</string>
@@ -45,4 +45,7 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="my_profile">My Profile</string>
     <string name="student_profile">STUDENT PROFILE</string>
     <string name="student_picture">Student picture</string>
+    <string name="queries">Queries</string>
+    <string name="submit">SUBMIT</string>
+    <string name="query_type">Query Type</string>
 </resources>

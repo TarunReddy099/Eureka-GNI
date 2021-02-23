@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Query_Type">
+        <item>Fee Payment</item>
+        <item>Academics</item>
+        <item>Results</item>
+        <item>Events</item>
+        <item>Clubs</item>
+        <item>Registrations</item>
+    </array>
+</resources>

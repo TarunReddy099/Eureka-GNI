@@ -25,8 +25,8 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/nav_upcoming"
-        android:name="com.example.eureka_gni.ui.home.UpcomingEvents"
-        android:label="Upcoming Events"
-        tools:layout="@layout/fragment_upcoming_events" />
+        android:id="@+id/nav_query"
+        android:name="com.example.eureka_gni.ui.home.Query"
+        android:label="@string/queries"
+        tools:layout="@layout/fragment_query" />
 </navigation>
