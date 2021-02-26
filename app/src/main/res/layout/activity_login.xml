@@ -1,57 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-<androidx.cardview.widget.CardView
-    android:layout_width="140dp"
-    android:layout_height="140dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="90dp"
-    app:cardCornerRadius="80dp"
-    android:layout_marginBottom="15dp">
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.cardview.widget.CardView
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:background="@drawable/logo11"
-        android:elevation="10dp"
-        android:contentDescription="@string/applogo" />
-</androidx.cardview.widget.CardView>
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="80dp">
 
-
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/logo11"
+            android:contentDescription="@string/applogo"
+            android:elevation="10dp" />
+    </androidx.cardview.widget.CardView>
 
 
     <com.google.android.material.textfield.TextInputLayout
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:layout_height="wrap_content"
-        app:boxBackgroundMode="filled"
+        android:layout_gravity="center"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
-        app:endIconMode="clear_text"
+        android:hint="@string/email"
+        app:boxBackgroundMode="filled"
         app:boxStrokeColor="#81d4fa"
         app:boxStrokeWidth="2sp"
-        android:hint="@string/email">
+        app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email1"
-            android:maxLines="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="#fff"
             android:layout_marginTop="3dp"
-            android:inputType="textEmailAddress"
             android:layout_marginBottom="3dp"
+            android:background="#fff"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
 
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -59,38 +58,37 @@
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-
-        app:boxBackgroundMode="filled"
         android:layout_marginTop="3dp"
+
+        android:layout_marginRight="20dp"
+        android:hint="@string/enter_password"
+        app:boxBackgroundMode="filled"
         app:boxStrokeColor="#81d4fa"
-        app:endIconMode="password_toggle"
         app:boxStrokeWidth="2sp"
-        android:hint="@string/enter_password">
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="#fff"
-            android:maxLines="1"
-            android:inputType="textPassword"
             android:layout_marginBottom="5dp"
-            />
+            android:background="#fff"
+            android:inputType="textPassword"
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login1"
         android:layout_width="180dp"
-        android:layout_gravity="center"
         android:layout_height="60dp"
-        android:elevation="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="30dp"
         android:text="@string/login"
         android:textSize="20sp"
         android:textStyle="bold" />

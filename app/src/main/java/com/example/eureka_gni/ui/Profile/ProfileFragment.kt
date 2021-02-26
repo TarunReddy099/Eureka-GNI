@@ -20,20 +20,19 @@ import com.squareup.picasso.Picasso
 class ProfileFragment : Fragment() {
 
 
-
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_profile, container, false)
         val view: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
 
-       val name=view.findViewById<TextView>(R.id.studName)
-        val rollno=view.findViewById<TextView>(R.id.roll_no)
-        val branch=view.findViewById<TextView>(R.id.branchName)
-        val year=view.findViewById<TextView>(R.id.grad_year)
-       val stdiimg=view.findViewById<ImageView>(R.id.studentImage)
+        val name = view.findViewById<TextView>(R.id.studName)
+        val rollno = view.findViewById<TextView>(R.id.roll_no)
+        val branch = view.findViewById<TextView>(R.id.branchName)
+        val year = view.findViewById<TextView>(R.id.grad_year)
+        val stdiimg = view.findViewById<ImageView>(R.id.studentImage)
         val mFirestore: FirebaseFirestore = FirebaseFirestore.getInstance()
         val user = FirebaseAuth.getInstance().currentUser
         val email: String = user?.email.toString()
@@ -53,27 +52,17 @@ class ProfileFragment : Fragment() {
                     val surl: String = document.getString("img").toString()
 
 
-                    name.text=sname
-                    rollno.text=sroll
-                    branch.text=sbranch
-                    year.text=syear
+                    name.text = sname
+                    rollno.text = sroll
+                    branch.text = sbranch
+                    year.text = syear
 
                     Picasso.get().load(surl).into(stdiimg);
-
 
 
                 }
             }
         }
-
-
-
-
-
-
-
-
-
         return view
 
         return root

@@ -4,167 +4,189 @@
     android:layout_height="match_parent"
     android:layout_marginTop="100dp"
     android:paddingLeft="10dp"
-    android:paddingRight="10dp" >
-    <TableRow android:background="#0079D6" android:padding="5dp">
+    android:paddingRight="10dp">
+
+    <TableRow
+        android:background="#0079D6"
+        android:padding="5dp">
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/name"
-            android:textColor="#FFFFFF"
-            android:textAlignment="center"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
             android:id="@+id/sec"
-            android:textColor="#FFFFFF"
-            android:textAlignment="center"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
     </TableRow>
-    <TableRow android:background="#808080" android:padding="5dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFFFFF"
-            android:text="No" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFFFFF"
-            android:text="Subject" />
+
+    <TableRow
+        android:background="#808080"
+        android:padding="5dp">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FFFFFF"
-            android:text="Grade" />
+            android:layout_weight="2"
+            android:text="Subject"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Grade"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="1" />
+            android:layout_weight="2"
+            android:text="Machine Learning" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ML" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/ml_marks"
-            />
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="2" />
+            android:layout_weight="2"
+            android:text="Artificial Intelligence" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="AI" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/ai_marks"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_weight="2" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="3" />
+            android:layout_weight="2"
+            android:text="Mobile Application Development" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="MAD" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/mad_marks"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_weight="2" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="4" />
+            android:layout_weight="2"
+            android:text="Information Security" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="IS" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/is_marks"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_weight="2" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="5" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:text="Web Services" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/ws_marks"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_weight="2" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="6" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:text="MAD Lab" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/madlab_marks"
-            />
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
     </TableRow>
-    <TableRow android:background="#DAE8FC" android:padding="5dp">
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:text="TOTAL GRADE"
-            android:textAlignment="center"/>
+            />
+
         <TextView
+            android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/total"
-            android:textAlignment="center"/>
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
 
     </TableRow>
 </TableLayout>

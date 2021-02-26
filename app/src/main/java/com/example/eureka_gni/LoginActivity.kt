@@ -1,14 +1,12 @@
 package com.example.eureka_gni
 
-import android.content.Context
+
 import android.content.Intent
-import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
@@ -46,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
 
 
 
-            if (auth.currentUser == null){
+            if (auth.currentUser == null) {
                 if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
                     Toast.makeText(
                         this@LoginActivity,
@@ -66,15 +64,11 @@ class LoginActivity : AppCompatActivity() {
                             }
                         })
                 }
-            }else{
+            } else {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
         }
-
-
-
-
 
 
     }

@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -34,8 +32,11 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.nav_home,R.id.nav_profile,R.id.nav_query), drawerLayout)
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.nav_home, R.id.nav_profile, R.id.nav_query
+            ), drawerLayout
+        )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
@@ -47,10 +48,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id=item.itemId
+        val id = item.itemId
 
-        if (id==R.id.action_logout){
-            val firebaseAuth= FirebaseAuth.getInstance().signOut()
+        if (id == R.id.action_logout) {
+            val firebaseAuth = FirebaseAuth.getInstance().signOut()
             Toast.makeText(this, "Successfully Logged out", Toast.LENGTH_LONG).show()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)

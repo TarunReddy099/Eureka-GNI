@@ -15,11 +15,9 @@ import com.example.eureka_gni.*
 class HomeFragment : Fragment() {
 
 
-
     var viewPager: ViewPager? = null
     var adapter: CustomSwipeAdapter? = null
-    lateinit var detail:String
-
+    lateinit var detail: String
 
 
     override fun onCreateView(
@@ -27,11 +25,11 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        val events=view.findViewById<CardView>(R.id.events)
-        val dev_mail=view.findViewById<TextView>(R.id.devmail)
-        val clubs=view.findViewById<CardView>(R.id.clubs)
-        val results =view.findViewById<CardView>(R.id.results)
-        val visitGni=view.findViewById<CardView>(R.id.visitGni)
+        val events = view.findViewById<CardView>(R.id.events)
+        val dev_mail = view.findViewById<TextView>(R.id.devmail)
+        val clubs = view.findViewById<CardView>(R.id.clubs)
+        val results = view.findViewById<CardView>(R.id.results)
+        val visitGni = view.findViewById<CardView>(R.id.visitGni)
         val
                 viewPager = view.findViewById<View>(R.id.view_pager) as ViewPager
         adapter = CustomSwipeAdapter(this.activity)
@@ -39,7 +37,7 @@ class HomeFragment : Fragment() {
 
 
         events.setOnClickListener {
-           startActivity(Intent(requireActivity().baseContext, EventActivity::class.java))
+            startActivity(Intent(requireActivity().baseContext, EventActivity::class.java))
         }
         clubs.setOnClickListener {
             startActivity(Intent(requireActivity().baseContext, ClubJoiningActivity::class.java))
@@ -49,8 +47,8 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireActivity().baseContext, ResultsHomeActivity::class.java))
         }
         visitGni.setOnClickListener {
-            val iii = Intent(requireActivity().baseContext,Register1Screen::class.java)
-            iii.putExtra("event","clgsite")
+            val iii = Intent(requireActivity().baseContext, Register1Screen::class.java)
+            iii.putExtra("event", "clgsite")
             requireActivity().startActivity(iii)
         }
 
@@ -69,8 +67,6 @@ class HomeFragment : Fragment() {
         }
         return view
     }
-
-
 
 
 }

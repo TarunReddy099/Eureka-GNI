@@ -24,8 +24,8 @@ class Register1Screen : AppCompatActivity() {
                 val document = task.result
                 if (document != null) {
                     var iii: Intent
-                    iii= getIntent()
-                    var info : String = iii.getStringExtra("event")
+                    iii = getIntent()
+                    var info: String = iii.getStringExtra("event")
                     val register: String? = document.getString(info)
 
                     val myWebView: WebView = findViewById(R.id.webviewb)

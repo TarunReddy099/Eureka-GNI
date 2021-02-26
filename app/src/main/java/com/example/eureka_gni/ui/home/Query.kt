@@ -29,10 +29,7 @@ class Query : Fragment() {
         val root = inflater.inflate(R.layout.fragment_query, container, false)
         val view: View = inflater!!.inflate(R.layout.fragment_query, container, false)
 
-
-
         val submit=view!!.findViewById<Button>(R.id.query_btn)
-
         val complaint=view!!.findViewById<EditText>(R.id.editTextTextMultiLine)
 
 
@@ -45,8 +42,6 @@ class Query : Fragment() {
             val usermap = HashMap<String, Any>()
             usermap.put("type of query", section_details)
             usermap.put("nominee age", complaint.text.toString())
-
-
 
 
 
