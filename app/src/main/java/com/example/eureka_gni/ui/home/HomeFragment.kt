@@ -56,7 +56,7 @@ class HomeFragment : Fragment() {
 
         dev_mail?.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
-            val recipients = arrayOf("eurekaGni@gmail.com")
+            val recipients = arrayOf("eureka@gmail.com")
             intent.putExtra(Intent.EXTRA_EMAIL, recipients)
             intent.putExtra(Intent.EXTRA_SUBJECT, "Subject text here...")
             intent.putExtra(Intent.EXTRA_TEXT, "Body of the content here...")
