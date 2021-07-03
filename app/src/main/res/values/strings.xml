@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Eureka-GNI</string>
+    <string name="app_name">E-Campus</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -11,32 +11,26 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Live Events</string>
     <string name="register">Register</string>
-    <string name="club4">MISSION: The Mission of this club is to preserve, promote and disseminate all forms of art and culture.
+    <string name="club4">MISSION:A college Radio station run by the students and for the students will help build an inclusive atmosphere in the college. Radio is all about communication and running a radio show takes commitment and teamwork in order for it to be a success. Our systems have one goal that is to help all of us grow together as a community and gain new skills while being informed of all the thing happening around us.</string>
+    <string name="club2">VISION: Developer Student Society"  aims in providing an umbrella to the two existing clubs/groups at Department . It also aims to provide infrastructure support i.e labs installed with Android Studio software to ease , existing Android and Web clubs to conduct workshops at Institution. The student representatives/facilitators for the Developer Student Society from institution are mentored by Google trainers and are provided teaching materials to conduct development sessions at campus monthly.</string>
+    <string name="club3">MISSION: Street cause is a student run organization which intend to do something for the betterment of society.We take up projects that creates impact and fulfil the necessity of people who are in need. We hold regular meeting, discussions and organize projects based on various social issues.
 
-\nVISION: The vision of the Cultural club-YOUtsav is to provide a supportive environment for the interested students to share their creativity, knowledge and passion for while attending Guru Nanak Institutions. It is our vision that we will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in all the events.</string>
-    <string name="club2">VISION: This club was created with the sole purpose of honing technical skills of our club members and other students and also introduce new technologies to students. This club also helps the students in completing their individual project with the help of senior developers (mentors).
-
-\nMISSION: The major objective of this technical club is to create a work environment where the students can share and develop their technical perceptions.
-
-Facilitate foster networking with alumni, industries, institutions and other stake-holders.</string>
-    <string name="club3">MISSION: Street cause GNI is a student run organizationwhich intend to do something for the betterment of society.We take up projects that creates impact and fulfil the necessity of people who are in need. We hold regular meeting, discussions and organize projects based on various social issues.
-
-\nVISION: The vision of Street Cause GNI is to provide a platform to the students of Gurunanak Institution who are enthusiastic and concern about the change in society. Here the students are exploredto various issues in society and work on it , this way they improve their coping skills. Working in a group they learn team work , communication skills and time management. It is our vision that Street Cause GNI will be able to get more awareness and support from students of all departments by sharing the details of projects that are held for a good cause.</string>
+\nVISION: The vision of Street Cause is to provide a platform to the students of Institution who are enthusiastic and concern about the change in society. Here the students are explored to various issues in society and work on it , this way they improve their coping skills. Working in a group they learn team work , communication skills and time management. It is our vision that Street Cause will be able to get more awareness and support from students of all departments by sharing the details of projects that are held for a good cause.</string>
     <string name="home_second">Home Second</string>
     <string name="club1">MISSION: The club will hold regular meetings and discussions and organize monthly events based on photography and non-photography, lectures and workshops by various artists.
-        \nVISION: The vision of the Photography Club-‘CLICKS’ @ GNI is to provide a supportive environment for the interested photography students to share their creativity, knowledge and passion for photography while attending Guru Nanak Institutions. It is our vision that photography club will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in photographic events as well as in extracurricular activities/events.</string>
+        \nVISION: The vision of the Photography Club-‘CLICKS’ @ VJIT is to provide a supportive environment for the interested photography students to share their creativity, knowledge and passion for photography while attending VJIT. It is our vision that photography club will share information and resources and that information will flow throughout all the departments increasing students’ interests and participation in photographic events as well as in extra-curricular activities/events.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="events">string</string>
-    <string name="visit_gni">visitGni</string>
+    <string name="visit_gni">visitVJIT</string>
     <string name="contact_developer">contactDeveloper</string>
     <string name="applogo">logo</string>
     <string name="email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
     <string name="login">LOGIN</string>
     <string name="submit1">SUBMIT</string>
-    <string name="gni_clubs">GNI CLUBS</string>
+    <string name="gni_clubs">VJIT CLUBS</string>
     <string name="results">RESULTS</string>
     <string name="eureka">EUREKA</string>
     <string name="clubs">CLUBS</string>
@@ -48,4 +42,5 @@ Facilitate foster networking with alumni, industries, institutions and other sta
     <string name="queries">Queries</string>
     <string name="submit">SUBMIT</string>
     <string name="query_type">Query Type</string>
+    <string name="e_campus">E-Campus</string>
 </resources>

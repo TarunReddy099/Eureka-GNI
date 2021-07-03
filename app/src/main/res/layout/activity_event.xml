@@ -53,6 +53,7 @@
 
 
                 <ImageView
+                    android:scaleType="fitXY"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:adjustViewBounds="true"
@@ -84,8 +85,9 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
+
                     android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     android:src="@drawable/event_chakdey" />
 
                 <com.google.android.material.button.MaterialButton
@@ -116,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     android:src="@drawable/event_esser" />
 
                 <com.google.android.material.button.MaterialButton

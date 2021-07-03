@@ -15,7 +15,7 @@
         android:layout_gravity="top"
         android:gravity="center_horizontal"
         android:padding="5dp"
-        android:text="@string/eureka"
+        android:text="@string/e_campus"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         android:textStyle="bold" />

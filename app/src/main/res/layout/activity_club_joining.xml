@@ -49,7 +49,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Clicks@Gni"
+                        android:text="Clicks@VJIT"
                         android:textAlignment="center"
                         android:textAppearance="?attr/textAppearanceHeadline6"
                         android:textSize="30dp"
@@ -91,6 +91,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:scaleType="fitXY"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:adjustViewBounds="true"
@@ -102,7 +103,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="TechMatz"
+                        android:text="DSC"
                         android:textAlignment="center"
                         android:textAppearance="?attr/textAppearanceHeadline6"
                         android:textSize="30dp"
@@ -145,6 +146,7 @@
 
                     <!-- Media -->
                     <ImageView
+                        android:scaleType="fitXY"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:adjustViewBounds="true"
@@ -155,7 +157,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Street Cause GNI"
+                        android:text="Street Cause VJIT"
                         android:textAlignment="center"
                         android:textAppearance="?attr/textAppearanceHeadline6"
                         android:textSize="30dp"
@@ -197,6 +199,7 @@
 
                     <!-- Media -->
                     <ImageView
+                        android:scaleType="fitXY"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
                         android:adjustViewBounds="true"
@@ -209,7 +212,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Youstav Gni"
+                        android:text="VJIT Radio"
                         android:textAlignment="center"
                         android:textAppearance="?attr/textAppearanceHeadline6"
                         android:textSize="30dp"
